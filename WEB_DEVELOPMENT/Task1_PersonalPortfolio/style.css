@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+header{
+    background:magenta;
+    color:white;
+    padding:40px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:25%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    padding:8px;
+}
+
+#typing{
+    font-size:20px;
+    font-weight:bold;
+}
