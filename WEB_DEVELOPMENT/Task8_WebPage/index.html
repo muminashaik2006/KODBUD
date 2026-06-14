@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animated Nature Gallery</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title animate__animated animate__fadeInDown">
+Nature Gallery
+</h1>
+
+<div class="gallery">
+
+<div class="card" onclick="openScene('mountain')">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800">
+<h3>Mountains</h3>
+</div>
+
+<div class="card" onclick="openScene('desert')">
+<img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800">
+<h3>Desert</h3>
+</div>
+
+<div class="card" onclick="openScene('ocean')">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800">
+<h3>Ocean</h3>
+</div>
+
+<div class="card" onclick="openScene('forest')">
+<img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800">
+<h3>Forest</h3>
+</div>
+
+</div>
+
+<div id="modal">
+
+<button class="close" onclick="closeScene()">✖</button>
+
+<div id="scene">
+
+<div id="mountain" class="content">
+<h1>Snowy Mountains</h1>
+<div class="snow-container"></div>
+</div>
+
+<div id="desert" class="content">
+<h1>Desert Storm</h1>
+<div class="sand-container"></div>
+</div>
+
+<div id="ocean" class="content">
+<h1>Ocean Waves</h1>
+<div class="wave"></div>
+<div class="wave wave2"></div>
+</div>
+
+<div id="forest" class="content">
+<h1>Green Forest</h1>
+<div class="leaf-container"></div>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
