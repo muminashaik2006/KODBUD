@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Google Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#202124;
+    color:white;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+/* Top Navigation */
+.top-bar{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:20px;
+}
+
+.top-bar a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+.top-bar a:hover{
+    text-decoration:underline;
+}
+
+/* Main Section */
+.main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:-60px;
+}
+
+/* Google Logo Animation */
+.logo{
+    font-size:90px;
+    font-weight:bold;
+    letter-spacing:-5px;
+    animation:float 3s ease-in-out infinite;
+}
+
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#EA4335;}
+.logo span:nth-child(3){color:#FBBC05;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#34A853;}
+.logo span:nth-child(6){color:#EA4335;}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+/* Search Box */
+.search-container{
+    margin-top:30px;
+    width:600px;
+    max-width:90%;
+    position:relative;
+}
+
+.search-box{
+    width:100%;
+    padding:15px 55px;
+    border:none;
+    border-radius:50px;
+    font-size:17px;
+    background:#303134;
+    color:white;
+    outline:none;
+    transition:.3s;
+}
+
+.search-box:hover{
+    background:#3c4043;
+}
+
+.search-box:focus{
+    background:#3c4043;
+    box-shadow:0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Search Icon */
+.search-icon{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+    color:#9aa0a6;
+}
+
+/* Mic Icon */
+.mic-icon{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Buttons */
+.buttons{
+    margin-top:30px;
+}
+
+.buttons button{
+    background:#303134;
+    color:white;
+    border:1px solid #303134;
+    padding:12px 22px;
+    margin:5px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buttons button:hover{
+    border:1px solid #5f6368;
+    background:#3c4043;
+}
+
+/* Language */
+.language{
+    margin-top:25px;
+    font-size:14px;
+}
+
+.language a{
+    color:#8ab4f8;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    background:#171717;
+    color:#9aa0a6;
+}
+
+.country{
+    padding:15px 30px;
+    border-bottom:1px solid #3c4043;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:15px 30px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#9aa0a6;
+    margin-right:15px;
+}
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .logo{
+        font-size:60px;
+    }
+
+    .search-box{
+        padding:14px 50px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<div class="top-bar">
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <div class="logo">
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+    </div>
+
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-box" placeholder="Search Google or type a URL">
+        <span class="mic-icon">🎤</span>
+    </div>
+
+    <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+
+    <div class="language">
+        Google offered in:
+        <a href="#">తెలుగు</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">தமிழ்</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+    <div class="country">
+        India
+    </div>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search Works</a>
+        </div>
+
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
