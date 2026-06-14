@@ -58,7 +58,14 @@ EcoRide is a modern and responsive landing page for a fictional electric bike st
 
 No installation is required.
 
+## Project Structure
+
 ```
+EcoRide/
+│
+├── index.html
+├── README.md
+└── requirements.txt
 ```
 
 ## Responsive Design
@@ -79,4 +86,4 @@ The page automatically adapts to:
 
 ## Author
 
-Created for Front-End Development Practice.
+SHAIK MUMINA
