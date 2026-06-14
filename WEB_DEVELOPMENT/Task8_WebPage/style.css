@@ -1,0 +1,184 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+.title{
+text-align:center;
+padding:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+cursor:pointer;
+overflow:hidden;
+border-radius:15px;
+transition:.5s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+text-align:center;
+}
+
+#modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:999;
+background:black;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:20px;
+font-size:25px;
+padding:10px;
+cursor:pointer;
+z-index:1000;
+}
+
+.content{
+display:none;
+width:100%;
+height:100vh;
+position:relative;
+background-size:cover;
+background-position:center;
+}
+
+#mountain{
+background:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
+background-size:cover;
+}
+
+#desert{
+background:url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600');
+background-size:cover;
+}
+
+#ocean{
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+background-size:cover;
+}
+
+#forest{
+background:url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600');
+background-size:cover;
+}
+
+.content h1{
+text-align:center;
+padding-top:50px;
+font-size:50px;
+}
+
+/* SNOW */
+
+.snow{
+position:absolute;
+color:white;
+font-size:20px;
+animation:snowfall linear infinite;
+}
+
+@keyframes snowfall{
+0%{
+transform:translateY(-100px);
+}
+100%{
+transform:translateY(100vh);
+}
+}
+
+/* SAND */
+
+.sand{
+position:absolute;
+width:5px;
+height:5px;
+background:#f5deb3;
+border-radius:50%;
+animation:blow 5s linear infinite;
+}
+
+@keyframes blow{
+0%{
+transform:translateX(-100px);
+opacity:1;
+}
+100%{
+transform:translateX(120vw);
+opacity:0;
+}
+}
+
+/* WAVES */
+
+.wave{
+position:absolute;
+bottom:0;
+width:200%;
+height:150px;
+background:rgba(255,255,255,.3);
+border-radius:50%;
+animation:waveMove 8s linear infinite;
+}
+
+.wave2{
+bottom:40px;
+animation-duration:12s;
+}
+
+@keyframes waveMove{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(-50%);
+}
+}
+
+/* LEAVES */
+
+.leaf{
+position:absolute;
+font-size:25px;
+animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-50px) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+}
