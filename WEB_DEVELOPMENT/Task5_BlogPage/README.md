@@ -83,6 +83,4 @@ Works smoothly on:
 
 ## Author
 
-Mumina Shaik
-
-Created for Front-End Development Practice using HTML, CSS, and JavaScript.
+SHAIK MUMINA 
