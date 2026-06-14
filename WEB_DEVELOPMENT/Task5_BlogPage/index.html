@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Blog Page</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,Lavender,WhiteSmoke);
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,Indigo,DarkSlateBlue);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+/* Blog Cards */
+
+.blog-post{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.blog-post:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.blog-post:nth-child(1){
+    border-top:8px solid Crimson;
+}
+
+.blog-post:nth-child(2){
+    border-top:8px solid MediumSeaGreen;
+}
+
+.blog-post:nth-child(3){
+    border-top:8px solid DeepSkyBlue;
+}
+
+.blog-post h2{
+    color:DarkSlateBlue;
+    margin-bottom:12px;
+}
+
+.meta{
+    color:Gray;
+    margin-bottom:20px;
+}
+
+/* Summary */
+
+.summary{
+    background:AliceBlue;
+    border-left:5px solid RoyalBlue;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.summary h4{
+    color:DarkBlue;
+    margin-bottom:8px;
+}
+
+/* Description */
+
+.description{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* Hidden Content */
+
+.full-content{
+    display:none;
+    background:HoneyDew;
+    padding:18px;
+    border-radius:10px;
+    margin-top:15px;
+    line-height:1.8;
+}
+
+.full-content h3{
+    color:DarkGreen;
+    margin-bottom:10px;
+}
+
+/* Button */
+
+.read-more{
+    background:GoldenRod;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.read-more:hover{
+    background:Tomato;
+}
+
+/* Footer */
+
+footer{
+    background:MidnightBlue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:2.2rem;
+}
+
+.blog-post{
+    padding:20px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Blog</h1>
+    <p>Exploring Technology, Learning & Student Life</p>
+</header>
+
+<div class="container">
+
+    <!-- Post 1 -->
+
+    <div class="blog-post">
+
+        <h2>The Future of Artificial Intelligence</h2>
+
+        <div class="meta">
+            Author: Mumina Shaik | Date: June 10, 2026
+        </div>
+
+        <div class="summary">
+            <h4>Summary</h4>
+            <p>
+                Artificial Intelligence is transforming industries through automation,
+                data analysis, and intelligent decision-making systems.
+            </p>
+        </div>
+
+        <div class="description">
+            <p>
+                Artificial Intelligence (AI) has become one of the most influential
+                technologies of the modern era. It is helping organizations improve
+                efficiency, automate repetitive tasks, and make smarter decisions.
+            </p>
+        </div>
+
+        <button class="read-more" onclick="toggleContent('post1')">
+            Read More
+        </button>
+
+        <div class="full-content" id="post1">
+
+            <h3>Complete Article</h3>
+
+            <p>
+                AI is used in healthcare for disease prediction, in education for
+                personalized learning, and in transportation for self-driving
+                technologies. Machine learning and deep learning are major branches
+                of AI that enable systems to learn from data.
+            </p>
+
+            <p>
+                As AI continues to evolve, it is expected to create new career
+                opportunities while reshaping industries across the world. Students
+                who learn AI today will be well-prepared for future technological
+                advancements.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Post 2 -->
+
+    <div class="blog-post">
+
+        <h2>Why Every Student Should Learn Web Development</h2>
+
+        <div class="meta">
+            Author: Mumina Shaik | Date: June 8, 2026
+        </div>
+
+        <div class="summary">
+            <h4>Summary</h4>
+            <p>
+                Web development empowers students to create websites, showcase
+                projects, and explore career opportunities in technology.
+            </p>
+        </div>
+
+        <div class="description">
+            <p>
+                Learning web development provides students with practical skills
+                that are highly valuable in today's digital world. It combines
+                creativity and technical knowledge.
+            </p>
+        </div>
+
+        <button class="read-more" onclick="toggleContent('post2')">
+            Read More
+        </button>
+
+        <div class="full-content" id="post2">
+
+            <h3>Complete Article</h3>
+
+            <p>
+                HTML structures webpages, CSS enhances design, and JavaScript
+                adds interactivity. Together, these technologies allow developers
+                to create responsive and user-friendly websites.
+            </p>
+
+            <p>
+                Students can build portfolios, personal blogs, and business
+                websites while learning web development. These projects improve
+                problem-solving skills and increase employability.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Post 3 -->
+
+    <div class="blog-post">
+
+        <h2>Balancing College Life and Skill Development</h2>
+
+        <div class="meta">
+            Author: Mumina Shaik | Date: June 5, 2026
+        </div>
+
+        <div class="summary">
+            <h4>Summary</h4>
+            <p>
+                Effective time management helps students achieve academic success
+                while continuously developing professional skills.
+            </p>
+        </div>
+
+        <div class="description">
+            <p>
+                College students often face challenges in managing coursework,
+                assignments, and personal growth. Developing skills alongside
+                academics is important for future career success.
+            </p>
+        </div>
+
+        <button class="read-more" onclick="toggleContent('post3')">
+            Read More
+        </button>
+
+        <div class="full-content" id="post3">
+
+            <h3>Complete Article</h3>
+
+            <p>
+                Creating a daily schedule and setting realistic goals can help
+                students balance learning and academics. Even one hour of focused
+                learning every day can make a significant difference.
+            </p>
+
+            <p>
+                Consistency, discipline, and curiosity are key factors in
+                continuous growth. Students who invest time in learning new
+                skills gain confidence and better career opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 My Blog | Designed Using HTML, CSS & JavaScript</p>
+</footer>
+
+<script>
+
+function toggleContent(id){
+
+let content = document.getElementById(id);
+
+if(content.style.display === "block"){
+    content.style.display = "none";
+}
+else{
+    content.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
